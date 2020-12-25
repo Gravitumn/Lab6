@@ -2,9 +2,10 @@
 using namespace std;
 
 char before(char x){
-	//Write your function definition here
+    if(x<'A'||x>'Z')return '0';
+    if(x-1<'A')return 'Z';
+    else return x-1;
 }
-
 int main(){
 	//Test Case
 	cout << before('A') << "\n";
